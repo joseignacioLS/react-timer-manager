@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: rgb(29, 29, 29);
+  overflow: hidden;
+}
+
+button {
+  border: 0;
+  outline: 0;
+
+  font-size: 1.25rem;
+
+  text-transform: uppercase;
+
+  color: white;
+  background-color: rgb(28, 137, 126);
+
+  border-radius: 1rem;
+
+  cursor: pointer;
+
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: rgb(37, 182, 168);
+  }
+}
+
+input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: inherit;
+  border-radius: .5rem;
+
+  min-width: 0;
+
+  &:focus {
+    outline: 1px solid red;
+  }
+}

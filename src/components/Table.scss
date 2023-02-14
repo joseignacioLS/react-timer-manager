@@ -1,0 +1,29 @@
+.table {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 50px 50px;
+  grid-template-rows: 1fr;
+
+  overflow: auto;
+
+  span {
+    padding: 1rem;
+  }
+}
+
+.rows {
+
+  max-height: 80vh;
+
+  overflow-y: auto;
+
+}
+
+.btn-create {
+  margin-top: 1rem;
+  padding: 1rem;
+}
