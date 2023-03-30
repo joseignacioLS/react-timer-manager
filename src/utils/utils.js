@@ -4,7 +4,7 @@ export const milisecondsToTime = (ms) => {
   const minuteFactor = 1000 * 60;
   const secondFactor = 1000;
 
-  const days = Math.floor(ms / dayFactor);
+  const days = Math.round(10 * ms / dayFactor) / 10;
   const hours = Math.floor(ms / hourFactor);
   const minutes = Math.floor((ms - hours * hourFactor) / minuteFactor);
   const seconds = Math.floor(
